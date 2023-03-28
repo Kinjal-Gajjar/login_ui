@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  font_awesome_flutter: ^10.4.0
 
 dev_dependencies:
   flutter_test:
@@ -77,6 +78,7 @@ flutter:
       fonts:
         - asset: "assets/fonts/Baloo_Bhai_2/BalooBhai2-Bold.ttf"
         - asset: "assets/fonts/Baloo_Bhai_2/BalooBhai2-Medium.ttf"
+        - asset: "assets/fonts/Baloo_Bhai_2/BalooBhai2-SemiBold.ttf"
           style: italic
   #   - family: Trajan Pro
   #     fonts:

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_ui/screen/get_started.dart';
+import 'package:login_ui/screen/phonescreen.dart';
+import 'package:login_ui/screen/register.dart';
 import 'package:login_ui/utils/const.dart';
 
 import 'screen/login_screen.dart';
@@ -20,6 +22,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/':(context) =>GetStarted(),
         LoginPage.routeName:(contex)=>LoginPage(),
+        RegisterScreen.routeName:(context) => RegisterScreen(),
+        PhoneScreen.routeName:(context) => PhoneScreen(),
       },
     );
   }
