@@ -86,6 +86,24 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "firebase_database",
+      "rootUri": "file:///Users/digvijay/.pub-cache/hosted/pub.dev/firebase_database-10.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "firebase_database_platform_interface",
+      "rootUri": "file:///Users/digvijay/.pub-cache/hosted/pub.dev/firebase_database_platform_interface-0.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "firebase_database_web",
+      "rootUri": "file:///Users/digvijay/.pub-cache/hosted/pub.dev/firebase_database_web-0.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "flutter",
       "rootUri": "file:///Users/digvijay/Download/flutter/packages/flutter",
       "packageUri": "lib/",
@@ -236,7 +254,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-04-07T08:28:29.416772Z",
+  "generated": "2023-04-08T12:27:22.815365Z",
   "generator": "pub",
-  "generatorVersion": "2.19.5"
+  "generatorVersion": "2.19.6"
 }

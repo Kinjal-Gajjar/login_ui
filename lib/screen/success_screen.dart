@@ -5,6 +5,7 @@ import '../utils/const.dart';
 import '../widget/button.dart';
 import '../widget/logo.dart';
 import 'login_screen.dart';
+import 'note.dart';
 
 class SuccesScreen extends StatefulWidget {
   const SuccesScreen({super.key});
@@ -83,6 +84,14 @@ class _SuccesScreenState extends State<SuccesScreen> {
             },
           )
         ],
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+          Navigator.pushReplacement(
+              context, MaterialPageRoute(builder: (contex) => NotePage()));
+        },
+        label: Text('Add Data'),
+        backgroundColor: buttonColor,
       ),
     );
   }

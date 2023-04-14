@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../screen/phonescreen.dart';
-import '../screen/success_screen.dart';
 
 class Authbutton extends StatelessWidget {
   const Authbutton({
@@ -23,13 +22,7 @@ class Authbutton extends StatelessWidget {
                   backgroundColor: const Color(0xffC14949),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(29))),
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) {
-                    return const SuccesScreen();
-                  },
-                ));
-              },
+              onPressed: () {},
               child: const Icon(FontAwesomeIcons.google)),
           const SizedBox(
             width: 15,
