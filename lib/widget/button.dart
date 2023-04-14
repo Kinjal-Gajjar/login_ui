@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../screen/phonescreen.dart';
 import '../utils/const.dart';
 
 class Button extends StatelessWidget {
   String buttonName;
-  Button({super.key, required this.buttonName});
+  VoidCallback onpress;
+  Button({super.key, required this.buttonName, required this.onpress});
 
   @override
   Widget build(BuildContext context) {
@@ -17,8 +17,7 @@ class Button extends StatelessWidget {
 
           // decoration: const BoxDecoration(color: buttonColor),
           child: ElevatedButton(
-              onPressed: () {
-              },
+              onPressed: onpress,
               style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15)),

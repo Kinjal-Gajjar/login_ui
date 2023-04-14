@@ -1,12 +1,19 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:login_ui/screen/get_started.dart';
-import 'package:login_ui/screen/phonescreen.dart';
-import 'package:login_ui/screen/register.dart';
-import 'package:login_ui/utils/const.dart';
 
+import 'screen/get_started.dart';
 import 'screen/login_screen.dart';
+import 'screen/phonescreen.dart';
+import 'screen/register.dart';
+import 'utils/const.dart';
 
-void main() => runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp();
+  runApp(const MyApp());
+}
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -20,10 +27,10 @@ class MyApp extends StatelessWidget {
         primaryColor: primarycolor
       ),
       routes: {
-        '/':(context) =>GetStarted(),
-        LoginPage.routeName:(contex)=>LoginPage(),
-        RegisterScreen.routeName:(context) => RegisterScreen(),
-        PhoneScreen.routeName:(context) => PhoneScreen(),
+        '/': (context) => const GetStarted(),
+        LoginPage.routeName: (contex) => const LoginPage(),
+        RegisterScreen.routeName: (context) => const RegisterScreen(),
+        PhoneScreen.routeName: (context) => const PhoneScreen(),
       },
     );
   }

@@ -7,6 +7,8 @@ class Custromtextfield extends StatefulWidget {
   String hintText;
   bool obscureText;
   bool suffixIcon;
+  String validation;
+  TextEditingController controller;
   Custromtextfield({
     super.key,
     required this.icon,
@@ -14,6 +16,8 @@ class Custromtextfield extends StatefulWidget {
     required this.suffixIcon,
     required this.obscureText,
     required this.hintText,
+    required this.validation,
+    required this.controller,
   });
 
   @override
@@ -48,9 +52,15 @@ class _CustromtextfieldState extends State<Custromtextfield> {
         ),
         Padding(
           padding: const EdgeInsets.only(left: 47, right: 48),
-          child: TextField(
+          child: TextFormField(
               cursorColor: const Color(0xffDEACAC),
               obscureText: widget.obscureText,
+              controller: widget.controller,
+              validator: (value) {
+                if (value!.isEmpty) {
+                  return widget.validation;
+                }
+              },
               decoration: InputDecoration(
                   hintText: widget.hintText,
                   hintStyle: const TextStyle(

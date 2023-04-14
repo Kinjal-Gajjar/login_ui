@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1015816140218",
+    "project_id": "fir-tutorial-826d2",
+    "storage_bucket": "fir-tutorial-826d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015816140218:android:d6cf63570ab82f38415983",
+        "android_client_info": {
+          "package_name": "com.example.login_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015816140218-22s1m7ujft00qujb4n3qqgimevfuh7mv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZtzEodF-DJEo1RpZp4pWK7Wy_Utc_A20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015816140218-22s1m7ujft00qujb4n3qqgimevfuh7mv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

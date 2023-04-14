@@ -1,8 +1,12 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import '../utils/const.dart';
 import '../widget/logo.dart';
 import 'login_screen.dart';
+import 'success_screen.dart';
+
+FirebaseAuth auth = FirebaseAuth.instance;
 
 class GetStarted extends StatelessWidget {
   const GetStarted({super.key});
@@ -35,7 +39,13 @@ class GetStarted extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
           backgroundColor: buttonColor,
           onPressed: () {
-            Navigator.pushNamed(context, LoginPage.routeName);
+            final user = auth.currentUser;
+            if (user != null) {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (contex) => SuccesScreen()));
+            } else {
+              Navigator.pushNamed(context, LoginPage.routeName);
+            }
           },
           child: Image.asset('assets/images/coolicon.png')),
     );
